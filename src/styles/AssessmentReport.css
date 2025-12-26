@@ -1,0 +1,212 @@
+.assessment-header {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  margin-bottom: 25px;
+}
+
+.header-content h1 {
+  color: #1f2937;
+  font-size: 32px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.assessment-date {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.student-info-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 20px 0;
+  border-top: 2px solid #f0f0f0;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.student-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.info-group label {
+  color: #9ca3af;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.info-group h2 {
+  color: #1f2937;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.info-group p {
+  color: #374151;
+  font-size: 16px;
+  margin: 0;
+}
+
+.overall-score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.score-circle-main {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 6px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.score-inner {
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+}
+
+.overall-score {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.out-of {
+  font-size: 20px;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.score-label {
+  font-size: 12px;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.score-progress {
+  width: 100%;
+  max-width: 200px;
+}
+
+.progress-bar-main {
+  height: 8px;
+  background-color: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill-main {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 12px;
+  color: #6b7280;
+  text-align: center;
+  font-weight: 500;
+}
+
+.feedback-card {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 5px solid;
+}
+
+.feedback-header {
+  margin-bottom: 15px;
+}
+
+.feedback-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.feedback-description {
+  color: #374151;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 15px 0;
+}
+
+.feedback-suggestions h4 {
+  color: #1f2937;
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.feedback-suggestions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feedback-suggestions li {
+  color: #374151;
+  font-size: 13px;
+  padding: 6px 0 6px 20px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.feedback-suggestions li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .assessment-header {
+    padding: 20px;
+  }
+
+  .header-content h1 {
+    font-size: 24px;
+  }
+
+  .student-info-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .score-circle-main {
+    width: 140px;
+    height: 140px;
+  }
+
+  .overall-score {
+    font-size: 40px;
+  }
+}
